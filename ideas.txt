@@ -1,0 +1,58 @@
+Before you do anything, it's probably worth looking into PokeAPI
+    Good example of me always trying to reinvent the wheel lol
+
+
+
+Add more details/data to each entry
+    Base stats (HP, Attack, Defense, Sp. Atk, Sp. Def, Speed)
+    Evolutions 
+        // I think this would have to be its own object, could get complex. E.g. method could be level, item, move learned and level, location, etc.
+        // Maybe there could be a parameter for each type of evolution, and then values of false/null or actual values. That way, combined methods are
+        // supported, like Yamask needing to be in a certain location, at a certain HP, and a certain level?
+    Abilities (base, hidden)
+    Learnset (move, level, call to object containing data for each move)
+
+    An example incorporating some of these ideas:   
+    ```json {
+        pokemon: {
+            id: 1
+            name: "Bulbasaur",
+            type: "grass",
+            evolution: {
+                evolveFrom: {
+                    tf: false,
+                    method: null  
+                }
+                evolveTo: {
+                    tf: true,
+                    method: [level: 16]
+                }
+            },
+            learnset: {
+                byLevelUp: [
+                    [move: "vine whip", level: 7],
+                    [move: "razor leaf", level: 20],
+                    [...]
+                ]
+                byTM: ["hyper beam", "frenzy plant", "surf", ...],
+            },
+            abilities: {
+                base: ["Quark Drive", "Guts"],
+                hidden: ["Sap Sipper"]
+            },
+            heldItems: ["some berry"],
+            category: "Seed Pokemon",
+            description: "Bulbasaur is a small, quadrupedal amphibian Pokémon that has blue-green skin with darker patches.",
+            obtainMethods: [trade, "Viridian Forest", "Cerulean City"],
+            sprites: [bulbasaurMain.jpg, bulbasaurBack.jpg],
+            breeding: {},
+            cries: {},
+            experience: 101,
+            height: 10,
+            weight: 10
+        }
+    }
+
+
+
+Differentiating between the database entry for a Pokemon and a live state of one, i.e. a "build a Pokemon" feature

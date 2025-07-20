@@ -1,0 +1,189 @@
+{
+    "pokemon": [
+        {
+            "id": 1,
+            "name": "Bulbasaur",
+            "type": "grass"
+        },
+        {
+            "id": 2,
+            "name": "Ivysaur",
+            "type": "grass/poison"
+        },
+        {
+            "id": 3,
+            "name": "Venusaur",
+            "type": "grass/poison"
+        },
+        {
+            "id": 4,
+            "name": "Charmander",
+            "type": "fire"
+        },
+        {
+            "id": 5,
+            "name": "Charmeleon",
+            "type": "fire"
+        },
+        {
+            "id": 6,
+            "name": "Charizard",
+            "type": "fire/flying"
+        },
+        {
+            "id": 7,
+            "name": "Squirtle",
+            "type": "water"
+        },
+        {
+            "id": 8,
+            "name": "Wartortle",
+            "type": "water"
+        },
+        {
+            "id": 9,
+            "name": "Blastoise",
+            "type": "water"
+        },
+        {
+            "id": 10,
+            "name": "Caterpie",
+            "type": "bug"
+        },
+        {
+            "id": 11,
+            "name": "Metapod",
+            "type": "bug"
+        },
+        {
+            "id": 12,
+            "name": "Butterfree",
+            "type": "bug/flying"
+        },
+        {
+            "id": 13,
+            "name": "Weedle",
+            "type": "bug/poison"
+        },
+        {
+            "id": 14,
+            "name": "Kakuna",
+            "type": "bug/poison"
+        },
+        {
+            "id": 15,
+            "name": "Beedrill",
+            "type": "bug/poison"
+        },
+        {
+            "id": 16,
+            "name": "Pidgey",
+            "type": "normal/flying"
+        },
+        {
+            "id": 17,
+            "name": "Pidgeotto",
+            "type": "normal/flying"
+        },
+        {
+            "id": 18,
+            "name": "Pidgeot",
+            "type": "normal/flying"
+        },
+        {
+            "id": 19,
+            "name": "Rattata",
+            "type": "normal"
+        },
+        {
+            "id": 20,
+            "name": "Raticate",
+            "type": "normal"
+        },
+        {
+            "id": 21,
+            "name": "Spearow",
+            "type": "normal/flying"
+        },
+        {
+            "id": 22,
+            "name": "Fearow",
+            "type": "normal/flying"
+        },
+        {
+            "id": 23,
+            "name": "Ekans",
+            "type": "poison"
+        },
+        {
+            "id": 24,
+            "name": "Arbok",
+            "type": "poison"
+        },
+        {
+            "id": 25,
+            "name": "Pikachu",
+            "type": "electric"
+        },
+        {
+            "id": 26,
+            "name": "Raichu",
+            "type": "electric"
+        },
+        {
+            "id": 27,
+            "name": "Sandshrew",
+            "type": "ground"
+        },
+        {
+            "id": 28,
+            "name": "Sandslash",
+            "type": "ground"
+        },
+        {
+            "id": 29,
+            "name": "Nidoran♀",
+            "type": "poison"
+        },
+        {
+            "id": 30,
+            "name": "Nidorina",
+            "type": "poison"
+        },
+        {
+            "id": 31,
+            "name": "Nidoqueen",
+            "type": "poison/ground"
+        },
+        {
+            "id": 32,
+            "name": "Nidoran♂",
+            "type": "poison"
+        },
+        {
+            "id": 33,
+            "name": "Nidorino",
+            "type": "poison"
+        },
+        {
+            "id": 34,
+            "name": "Nidoking",
+            "type": "poison/ground"
+        },
+        {
+            "id": 35,
+            "name": "Clefairy",
+            "type": "fairy"
+        },
+        {
+            "id": 36,
+            "name": "Clefable",
+            "type": "fairy"
+        },
+        {
+            "id": 37,
+            "name": "Vulpix",
+            "type": "fire"
+        }
+    ]
+}
