@@ -1,13 +1,12 @@
 import React from 'react'
-import { TypeIcon, Button, Checkbox, Card, SectionHeader, CheckboxList } from './ui'
+import { TypeIcon, Button, Checkbox, Card, SectionHeader, CheckboxList, EvolutionStageIcon, SpecialCategoryIcon } from './ui'
 import { 
   POKEMON_TYPES, 
-  EVOLUTION_STAGES, 
-  SPECIAL_CATEGORIES,
   EVOLUTION_STAGE_NAMES,
   SPECIAL_CATEGORY_NAMES,
   GENERATIONS
 } from '../constants'
+import { EVOLUTION_STAGES, SPECIAL_CATEGORIES } from '../constants/evolution'
 
 
 
@@ -84,21 +83,25 @@ const Sort = ({
       </div>
       
       {/* Evolution Stage Filter */}
-      <CheckboxList
-        title="Evolution Stage"
-        items={Object.keys(EVOLUTION_STAGES).map(stage => ({
-          key: stage,
-          label: EVOLUTION_STAGE_NAMES[stage]
-        }))}
-        selectedItems={filterEvolutionStages}
-        onItemChange={(key, checked) => {
-          setFilterEvolutionStages(f =>
-            checked
-              ? [...f, key]
-              : f.filter(s => s !== key)
-          )
-        }}
-      />
+      <div className="mt-4">
+        <div className="font-bold text-white mb-2">Evolution Stage</div>
+        <div className="flex gap-2">
+          {Object.keys(EVOLUTION_STAGES).map(stage => (
+            <EvolutionStageIcon
+              key={stage}
+              stage={stage}
+              selected={filterEvolutionStages.includes(stage)}
+              onClick={(stage) => {
+                setFilterEvolutionStages(f =>
+                  f.includes(stage)
+                    ? f.filter(s => s !== stage)
+                    : [...f, stage]
+                )
+              }}
+            />
+          ))}
+        </div>
+      </div>
       
       {/* Special Category Filter */}
       <CheckboxList

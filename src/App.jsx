@@ -28,7 +28,7 @@ function App() {
         <div className="text-2xl font-bold text-gray-700">Loading Pokemon data...</div>
       </div>
     )
-  }
+    }
 
   // Show error state
   if (pokemonData.error) {
@@ -42,11 +42,11 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-0">
-      <div className="bg-pokedex-red rounded-3xl shadow-2xl p-0 flex flex-col items-stretch mx-4 lg:mx-8 mt-4 mb-8 w-full max-w-7xl">
+      <div className="bg-pokedex-red rounded-3xl shadow-2xl p-0 flex flex-col items-stretch mx-4 lg:mx-8 mt-4 mb-8 w-full max-w-7xl h-[90vh]">
         <Header />
         
-        <div className="flex gap-4 lg:gap-8 p-4 lg:p-8 items-stretch">
-          <div className="flex-1 min-w-0">
+        <div className="flex gap-4 lg:gap-8 p-4 lg:p-8 items-stretch flex-1 min-h-0">
+          <div className="flex-1 min-w-0 flex flex-col">
             <Entries 
               filteredEntries={filterData.filteredEntries}
               pokemonImages={pokemonData.pokemonImages}
@@ -56,7 +56,7 @@ function App() {
             />
           </div>
           
-          <div className="w-64 lg:w-80 flex flex-col gap-4 lg:gap-8">
+          <div className="w-64 lg:w-80 flex flex-col gap-4 lg:gap-8 flex-shrink-0">
             <Sort 
               selectedTypes={filterData.selectedTypes}
               setSelectedTypes={filterData.setSelectedTypes}
